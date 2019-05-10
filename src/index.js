@@ -12,28 +12,28 @@ import Tomogachi from './tomo.js';
     "use strict";
 
     // declare pet
-    const myPet = new Tomogachi('Pikachu', 'cat');
+    const pet = new Tomogachi('Pikachu', 'cat');
 
     /*
         Bind event handlers
     */
     document.getElementById('actionFeed').addEventListener('click', () => {
-        alert(myPet.feed());
+        alert(pet.feed());
     });
     document.getElementById('actionExercise').addEventListener('click', () => {
-        myPet.exercise();
+        pet.exercise();
     });
     document.getElementById('actionLook').addEventListener('click', () => {
-        alert(myPet.showType());
+        alert(pet.showType());
     });
     document.getElementById('actionTalk').addEventListener('click', () => {
-        alert(myPet.talk());
+        alert(pet.talk());
     });
     document.getElementById('actionStatus').addEventListener('click', () => {
-        alert(`Power Level: ${myPet.powerLevel}\r\nFood Level: ${myPet.foodLevel}`);
+        alert(`Power Level: ${pet.powerLevel}\r\nFood Level: ${pet.foodLevel}`);
     });
     document.getElementById('actionSay').addEventListener('click', () => {
-        //alert(myPet.actionSay());
+        //alert(pet.actionSay());
     });
 
 
