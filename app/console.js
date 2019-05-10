@@ -25,6 +25,7 @@ rl.on('line', function(line) {
 		switch(inputCmdPart)
 		{
 			case "feed":
+				console.log(pet.feed());
 				break;
 			case "exercise":
 				pet.exercise();
@@ -44,6 +45,10 @@ rl.on('line', function(line) {
 				break;
 			case "clear":
 				console.clear();
+				break;
+			case "list":
+			case "help":
+				console.log(`feed\r\nexercise\r\nlook\r\ntalk\r\nstatus\r\nsay <text>\r\nclear\r\nlist`);
 				break;
 		}
 		rl.prompt();
