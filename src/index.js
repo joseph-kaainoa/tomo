@@ -5,7 +5,7 @@
 * Purpose: drives index page
 *******************************/
 //const Tomogachi = require('./tomo');
-import Tomogachi from './tomo.js';
+import Tomogachi from './app/tomogachi.js';
 
 
 (function () {

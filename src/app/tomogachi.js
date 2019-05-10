@@ -1,5 +1,6 @@
 
-module.exports = class tomogachi {
+//module.exports = class tomogachi {
+export default class tomogachi {
 	constructor(name, type) {
 		this.name = name;
 		this.type = type;
@@ -21,7 +22,7 @@ module.exports = class tomogachi {
 	}
 
 	talk() {
-		console.log(`Hello!  My name is ${this.name}`);
+		return `Hello!  My name is ${this.name}`;
 	}
 
 	feed() {

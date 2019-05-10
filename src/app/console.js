@@ -1,4 +1,5 @@
-const Tomogachi = require('./tomogachi.js');
+//const Tomogachi = require('./tomogachi.js');
+import Tomogachi from './tomogachi.js'
 
 let pet = new Tomogachi("Pikachu", "cat");
 
@@ -34,7 +35,7 @@ rl.on('line', function(line) {
 				console.log(pet.showType());
 				break;
 			case "talk":
-				pet.talk();
+				console.log(pet.talk());
 				break;
 			case "status":
 				console.log(`Power Level: ${pet.powerLevel}`);
